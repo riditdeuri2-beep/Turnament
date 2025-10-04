@@ -1,0 +1,5 @@
+{
+  "name": "FF TOURNAMENT HUB",
+  "description": "A web application for managing and participating in Free Fire tournaments. It includes features for user registration, tournament management, wallet transactions, and a comprehensive admin panel.",
+  "requestFramePermissions": []
+}

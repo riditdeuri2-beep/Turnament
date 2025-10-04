@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FF TOURNAMENT HUB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-dark': '#121212',
+              'brand-gray': '#1e1e1e',
+              'brand-light-gray': '#2a2a2a',
+              'brand-orange': '#ff6600',
+              'brand-red': '#e53e3e',
+              'brand-text': '#f0f0f0',
+              'brand-text-secondary': '#a0a0a0',
+            },
+            keyframes: {
+              pulse: {
+                '50%': { opacity: '.7', transform: 'scale(1.05)' },
+              },
+              'fade-in': {
+                'from': { opacity: '0' },
+                'to': { opacity: '1' },
+              },
+              'fade-in-up': {
+                'from': { opacity: '0', transform: 'translateY(20px)' },
+                'to': { opacity: '1', transform: 'translateY(0)' },
+              }
+            },
+            animation: {
+              pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'fade-in': 'fade-in 0.5s ease-out forwards',
+              'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+            },
+            transitionProperty: {
+              'width': 'width',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.3",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.544.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-dark text-brand-text">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
